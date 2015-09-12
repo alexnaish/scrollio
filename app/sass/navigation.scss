@@ -1,0 +1,32 @@
+@import 'colours';
+
+.top-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	text-transform: uppercase;
+	transition: background 0.3s ease;
+	transition: padding 0.3s ease;
+
+	&.attached {
+		background: #FFF;
+		color: #000;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+		padding: 10px 0;
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+    	justify-content: center;
+    	align-items: center;
+
+		li {
+			display: block;
+			padding: 20px 30px;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+$light-blue: #3498db;
+$dark-blue: #2980b9;
+
+.lt-blue {
+	fill: $light-blue;
+    stroke: $light-blue;
+    background-color: $light-blue;
+}
+.dark-blue {
+	fill: $dark-blue;
+    stroke: $dark-blue;
+    background-color: $dark-blue;
+}
