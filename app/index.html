@@ -1,16 +1,19 @@
 <html>
+
 <head>
 	<title>Alex Naish</title>
+	<meta name="description" content="Alex Naish Website and Portfolio">
+	<meta name="author" content="Alex Naish">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 </head>
+
 <body>
 	<div class="container" id="top">
 		<nav class="top-nav">
 			<ul>
 				<li><a href="#about">About</a></li>
 				<li><a href="#projects">Projects</a></li>
-				<li><a href="#education">Education</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
@@ -22,32 +25,98 @@
 		</svg>
 		<section class="dark-blue" id="about">
 			<h2>About</h2>
-			<p>I am a London-based developer currently employed by Sky. I am currently working within Now TV on their website and the supporting editorial systems - the marketing website can be found <a href="http://www.nowtv.com">here</a>.</p>
+			<p>I am a London-based developer who prefers to focus on the larger picture. I am currently working within Now TV on their
+				website and the supporting editorial systems - the marketing website can be found <a href="http://www.nowtv.com">here</a>.</p>
 			<hr>
-			<p>I am constantly on the lookout to improve my skills and those of the people around me, I am a firm believer that irrelevant of age, education or experience, we never stop learning.</p>
+			<p>I am constantly on the lookout to improve my skills and those of the people around me. I am a firm believer that irrelevant
+				of age, education or experience, we never stop learning.</p>
 		</section>
-		<section class="lt-blue section-slash" id="projects">
+		<section class="wow fadeIn lt-blue section-slash" id="projects">
 			<h2>Projects</h2>
-			<p>My side projects all open source and hosted on github.</p>
+			<p>My side projects are all open source and hosted on github.</p>
 			<ul class="projects">
-				<li></li>
-				<li></li>
+				<li>
+					<aside class="wow fadeInLeft preview left">
+						<img width="300" height="300" src="/images/scholar.png">
+						<div>
+							<h3>Scholar</h3>
+							<h4>2015</h4>
+							<a class="action" href="http://github.com/alexnaish/scholar">View on Github</a>
+						</div>
+					</aside>
+					<article class="wow fadeInRight">
+						<ul>
+							<li>
+								<h3><span class="field">Name:</span> Scholar</h3>
+							</li>
+							<li>
+								<span class="field">Technologies:</span> AngularJS, Express.js, Node.js, MongoDB, SASS, Mongoose, Mocha, Gulp, Protractor,
+								Resemble.js
+							</li>
+							<li>
+								<span class="field">Description:</span> A MEAN stack application I created to integrate with our existing E2E tests
+								to allow an automated system of ensuring that any visual changes to website modules after code changes were caught
+								ahead of schedule. Tests take a screenshot of the module or page in question, submits it to the application and is
+								compared against a previously accepted version. If there are any differences, the failure is returned to the test
+								to provide immediate feedback.
+							</li>
+						</ul>
+					</article>
+				</li>
+				<li>
+					<aside class="wow fadeInRight preview right">
+						<img width="300" height="300" src="/images/jenkings.png">
+						<div>
+							<h3>Jenkings</h3>
+							<h4>2015</h4>
+							<a class="action" href="http://github.com/alexnaish/jenkings">View on Github</a>
+						</div>
+					</aside>
+					<article class="wow fadeInLeft article-left">
+						<ul>
+							<li>
+								<h3><span class="field">Name:</span> Jenkings</h3>
+							</li>
+							<li>
+								<span class="field">Technologies:</span> AngularJS, Socket.IO, SASS, Express.js, Node.js, MongoDB, Mongoose, Mocha,
+								Gulp, Jenkins API, GIT
+							</li>
+							<li>
+								<span class="field">Description:</span> During my work for NowTV we use feature branching while developing. This
+								meant when testing our branches on CI (Jenkins), there was often trouble following the results as multiple branches
+								could be being tested at one time. I created this application to allow the developers to track jenkins results based
+								on branch rather than time within a useful and easy display.
+							</li>
+						</ul>
+					</article>
+				</li>
 				<li></li>
 			</ul>
 		</section>
-		<section class="dark-blue section-slash" id="education">
-			<h2>Education</h2>
-			<p>Cum sociis natoque penatibus et magnis</p>
-		</section>
-		<section class="lt-blue section-slash" id="contact">
+		<section class="wow fadeIn lt-blue section-slash" id="contact">
 			<h2>Contact</h2>
-			<p>Cum sociis natoque penatibus et magnis</p>
+			<p>If you want to contact me, please feel free to use one of the below:</p>
+			<ul class="contacts">
+				<li>
+					<a class="action" href="http://uk.linkedin.com/in/alexnaish/">Linkedin</a>
+				</li>
+				<li>
+					<a class="action" href="http://github.com/alexnaish">Github</a>
+				</li>
+				<li>
+					<a class="action" href="mailto:alex.naish.90@gmail.com">Email</a>
+				</li>
+			</ul>
 		</section>
-		<div class="reset"><a class="up-arrow" href="#top"></a></div>
+		<div class="reset">
+			<a class="up-arrow" href="#top"></a>
+		</div>
 	</div>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script>
+		new WOW().init();
+		$('.reset').hide();
 		$(window).scroll(function() {
 			if ($(window).scrollTop() > 50) {
 				$('.top-nav').addClass('attached');
@@ -67,6 +136,5 @@
 					return false;
 				}
 		});
-
 	</script>
 </body>
