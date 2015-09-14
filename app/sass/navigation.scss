@@ -1,35 +1,34 @@
 @import 'colours';
-
 .top-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 10000;
-	text-transform: uppercase;
-	transition: background 0.3s ease;
-	transition: padding 0.3s ease;
-
-	&.attached {
-		background: #FFF;
-		color: #000;
-		border-bottom: 1px solid rgba(0,0,0,0.3);
-		padding: 10px 0;
-	}
-
-	ul {
-		list-style: none;
-		display: flex;
-		flex-direction: row;
-    	justify-content: center;
-    	align-items: center;
-
-		li {
-			display: block;
-			padding: 15px 30px;
-			a {
-				padding: 5px 0;
-			}
-		}
-	}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    transition: padding 0.3s ease;
+    &.attached {
+        background: #FFF;
+        color: #000;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 10px 0;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        li {
+            float: left;
+            display: block;
+            padding: 15px 30px;
+            a {
+                padding: 5px 0;
+            }
+        }
+    }
 }
