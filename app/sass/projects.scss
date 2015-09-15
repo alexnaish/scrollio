@@ -1,4 +1,5 @@
 .projects {
+<<<<<<< HEAD
 
 	max-width: 800px;
 	margin: 0 auto;
@@ -96,3 +97,88 @@
 		}
 	}
 }
+=======
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40px;
+    li {
+        list-style: none;
+        margin: 20px 0;
+        padding: 0;
+        transition: all 0.3s ease;
+        clear: both;
+        &:after {
+            content: " ";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        article {
+            width: 500px;
+            padding-left: 20px;
+            line-height: 20px;
+            text-align: justify;
+            float: right;
+            color: white;
+            @media (max-width: 820px) {
+                float: none;
+                margin: 0 auto;
+                text-align: center;
+                width: 80%;
+                margin-bottom: 50px
+            }
+            &.article-left {
+                padding-left: 0;
+                padding-right: 20px;
+            }
+            .field {
+                font-weight: bolder;
+            }
+        }
+        .preview {
+            width: 300px;
+            position: relative;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            @media (max-width: 820px) {
+                margin: 0 auto;
+                float: none
+            }
+            img {
+                border-radius: 5px;
+            }
+            div {
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                opacity: 0;
+                position: absolute;
+                padding: 40px;
+                background: rgba(0, 0, 0, 0.7);
+                color: rgba(255, 255, 255, 0.9);
+                cursor: pointer;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                &:hover {
+                    opacity: 1;
+                }
+                h3,
+                h4 {
+                    text-align: left;
+                }
+                h3 {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+                h4 {
+                    font-size: 18px;
+                }
+                .action {
+                    width: 100%;
+                    margin-top: 60%;
+                }
+            }
+        }
+    }
+}
+>>>>>>> daf1cdd206b0066ceeeba01cd94fc4764ec52d9e
